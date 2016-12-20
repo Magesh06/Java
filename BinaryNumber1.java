@@ -1,9 +1,9 @@
 import java.util.*; 
-public class BinaryNumber 
+public class BinaryNumber1 
 { 
 public static void main(String args[]) 
 { 
-int r=0,c=0,num,b; 
+int c=0,num,b; 
 Scanner sl=new Scanner(System.in); 
 System.out.println("Enter a number"); 
 num=sl.nextInt(); 
@@ -11,13 +11,11 @@ b= num;
 while(num>0) 
 {
 if((num %10==0)|| (num%10==1)) 
-c++; 
-r++; 
-num=num/10; 
-} 
-if(c==r) 
+c++;
 System.out.println(b+" is a Binary Number."); 
-else 
+else
 System.out.println(b+" is not a Binary Number"); 
+num=num/10; 
+ }
 } 
 } 
